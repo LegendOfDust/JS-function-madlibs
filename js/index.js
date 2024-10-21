@@ -3,13 +3,13 @@ console.log('Successfully linked');
 //Generate Mad Libs Function
 const generateMadLibs = () => {
     //get values
-    const bird = getInput('typeOfBird');
+    const dayOfWeek = getInput('dayOfWeek');
+    const somethingEdible = getInput('somethingEdible');
+    const articleOfClothing = getInput('articleOfClothing');
+    const animal = getInput('animal');
     const name = getInput('name');
-    const noun = getInput('noun');
-    const liquid = getInput('liquid');
-    const bodyPart = getInput('bodyPart');
 
-    const madLib = `It was a cold October day. I woke to the smell of ${bird} roasting in the kitchen. My roommate said, "See if ${name} needs a fresh ${noun}. So I carried a glass of ${liquid} into ${name}'s room. When I got there, I couldn't believe my ${bodyPart}!`;
+    const madLib = `When I woke up this ${dayOfWeek}, I started by having a healthy serving of ${somethingEdible} for breakfast. I then put on my ${articleOfClothing} and went outside to take my pet ${animal} for a walk. My ${animal}'s name is ${name}!`;
     const MadLibElement = document.getElementById('mad-libs');
     MadLibElement.textContent = madLib;
     //concatinate Mad Lib string
